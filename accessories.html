@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Accessories | SDC</title>
+    <link rel="stylesheet" href="./style.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h2>Standing Desk Company</h2>
+    </header>
+    <!-- navbar -->
+    <nav>
+      <div id="menu-nav">
+        <ul class="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li class="sub-menu">
+            <a href="product.html">Products</a>
+            <ul class="sub">
+              <li><a href="desk.html">Rising Desks</a></li>
+              <li><a href="accessories.html">Accessories</a></li>
+            </ul>
+          </li>
+          <li><a href="contact_us.html">Contact Us</a></li>
+          <li><a href="health_benefit.html">Health Benefits</a></li>
+          <li>
+            <a href="cart.html"
+              ><img
+                class="shopping-cart-icon"
+                src="./Images/shopping-cart.png"
+                alt=""
+            >
+            <span id="cartCount">0</span>
+          </a>
+          </li>
+        </ul>
+      </div>
+      <input type="checkbox" name="menu-toggle" id="menu-toggle" >
+      <label for="menu-toggle"
+        ><img class="menu-bar-icon" src="./Images/menu.png" alt=""
+      ></label>
+      <input type="search" id="searchInput" class="search" placeholder="Search..." onkeyup="searchFunction()">
+    </nav>
+
+    <ul class="mobile-nav">
+      <li><a href="index.html">Home</a></li>
+      <li class="mobile-sub-menu">
+        <a href="product.html">Products</a>
+        <ul class="mobile-sub">
+          <li><a href="desk.html">Rising Desks</a></li>
+          <li><a href="accessories.html">Accessories</a></li>
+        </ul>
+      </li>
+      <li><a href="contact_us.html">Contact Us</a></li>
+      <li><a href="health_benefit.html">Health Benefits</a></li>
+      <li>
+        <a href="cart.html"
+          ><img
+            class="shopping-cart-icon"
+            src="./Images/shopping-cart.png"
+            alt=""
+        >
+            <span id="cartCountMobile">0</span>
+      </a>
+      </li>
+    </ul>
+
+    <section class="accessories-page-section">
+      <div class="cards">
+        <div class="card-container">
+          <img src="./Images/Desk-riser1.jpeg" alt="" >
+          <div class="product-name">
+            <h4>Desk Riser</h4>
+            <h4>(A-0924)</h4>
+            <p>Accessories</p>
+            <p>Rating : 4.5 (26 reviews)</p>
+          </div>
+          <div class="price">
+            <h4><del>$149.00</del></h4>
+            <h2>$89.00</h2>
+          </div>
+
+          <button class="btn-add-to-cart" onclick="addToCart('Desk Riser (A-0924)', 149.00)">Add to cart</button>
+        </div>
+
+        <div class="card-container">
+          <img src="./Images/Laptop_Stand.jpeg" alt="" >
+          <div class="product-name">
+            <h4>Laptop Stand</h4>
+            <h4>(A-0854)</h4>
+            <p>Accessories</p>
+            <p>Rating : 4.2 (30 reviews)</p>
+          </div>
+          <div class="price">
+            <h4><del>$49.00</del></h4>
+            <h2>$29.00</h2>
+          </div>
+          <button class="btn-add-to-cart" onclick="addToCart('Laptop Stand (A-0854)', 49.00)">Add to cart</button>
+        </div>
+
+        <div class="card-container">
+          <img src="./Images/product_accessories1.jpg" alt="" >
+          <div class="product-name">
+            <h4>Cabinet</h4>
+            <h4>(A-0456)</h4>
+            <p>Accessories</p>
+            <p>Rating : 4.1 (29 reviews)</p>
+          </div>
+          <div class="price">
+            <h4>$206.80</h4>
+          </div>
+          <button class="btn-add-to-cart" onclick="addToCart('Cabinet (A-0456)', 206.80)">Add to cart</button>
+        </div>
+
+        <div class="card-container">
+          <img src="./Images/product_accessories2.jpg" alt="" >
+          <div class="product-name">
+            <h4>Dual Monitor Arms</h4>
+            <h4>(A-0245)</h4>
+            <p>Accessories</p>
+            <p>Rating : 4.3 (18 reviews)</p>
+          </div>
+          <div class="price">
+            <h4>$129.25</h4>
+          </div>
+          <button class="btn-add-to-cart" onclick="addToCart('Aluminum Dual Monitor Arms (A-0245)', 129.25)">Add to cart</button>
+        </div>
+
+        <div class="card-container">
+          <img src="./Images/product_accessories3.jpg" alt="" >
+          <div class="product-name">
+            <h4>Tablet Stand</h4>
+            <h4>(A-0852)</h4>
+            <p>Accessories</p>
+            <p>Rating : 4.5 (27 reviews)</p>
+          </div>
+          <div class="price">
+            <h4>$21.42</h4>
+          </div>
+          <button class="btn-add-to-cart" onclick="addToCart('Tablet Stand (A-0852)', 21.42)">Add to cart</button>
+        </div>
+
+        <div class="card-container">
+          <img src="./Images/Product_table_casters.jpg" alt="" >
+          <div class="product-name">
+            <h4>Lockable Table Casters</h4>
+            <h4>(A-0321)</h4>
+            <p>Accessories</p>
+            <p>Rating : 4.6 (21 reviews)</p>
+          </div>
+          <div class="price">
+            <h4>$33.24</h4>
+          </div>
+          <button class="btn-add-to-cart" onclick="addToCart('Lockable Table Casters (A-0321)', 33.24)">Add to cart</button>
+        </div>
+
+        
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-nav">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="desk.html">Rising Desks</a></li>
+          <li><a href="accessories.html">Accessories</a></li>
+          <li><a href="contact_us.html">Contact Us</a></li>
+          <li><a href="health_benefit.html">Health Benefits</a></li>
+          <li>
+            <a href="cart.html"
+              ><img
+                class="shopping-cart-icon"
+                src="./Images/shopping-cart.png"
+                alt=""
+            ></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="follow-us">
+        <h4>Follow Us</h4>
+        <a class="socialmedia-icon" href="https://www.facebook.com/login/" target="_blank"
+          ><img src="./Images/facebook.png" alt=""
+        ></a>
+        <a class="socialmedia-icon" href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"
+          ><img src="./Images/instagram.png" alt=""
+        ></a>
+        <a class="socialmedia-icon" href="https://twitter.com/login" target="_blank"
+          ><img src="./Images/twitter.png" alt=""
+        ></a>
+      </div>
+
+      <div class="contact-us">
+        <h4>Contact Us</h4>
+        <p>Address : No.7, Baho Street, Kamayut Township, Yangon</p>
+        <p>Phone : +959 147 852 369</p>
+        <p>Email : customerservice@sdc.com</p>
+      </div>
+    </footer>
+
+    <script src="cart.js"></script>
+    <script>
+      function searchFunction() {
+    var input = document.getElementById("searchInput").value.toLowerCase().trim();
+    var words = input.split(/\s+/);
+
+    var cards = document.getElementsByClassName("card-container");
+
+    if (input === "") {
+        
+        for (var i = 0; i < cards.length; i++) {
+            cards[i].style.display = "block";
+        }
+        return; 
+    }
+
+    for (var i = 0; i < cards.length; i++) {
+        var card = cards[i];
+        var cardText = card.textContent.toLowerCase();
+        var match = false;
+
+        for (var j = 0; j < words.length; j++) {
+            var word = words[j];
+            if (word && cardText.includes(word)) {
+                match = true;
+                break;
+            }
+        }
+
+        if (match) {
+            card.style.display = "block"; 
+        } else {
+            card.style.display = "none";
+        }
+    }
+}
+
+    </script>
+  </body>
+</html>
